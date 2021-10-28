@@ -1,0 +1,70 @@
+@import './variables.css';
+
+.container-MenuDataContact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--white);
+}
+.img_perfil {
+    position: absolute;
+    top: -58px;
+    left: calc(50% - 58px);
+}
+.container-data_person {
+    padding-top: 74px;
+    text-align: center;
+}
+.name, .phone {
+    font-family: var(--poppins);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--strong-blue);
+}
+.phone {
+    margin-top: 3px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.btn-close-menu {
+    position: absolute;
+    left: calc(100% - 40px);
+    top: 22px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.container__data {
+    width: 90%;
+   height: 400px;
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 362px;
+    padding-top: 20px;
+}
+.container__data::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0);
+    width: 5px;
+}
+.container__data::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.555);
+}
+.Item-group {
+    margin-bottom: 22px;
+}
+.Item-group .title { 
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgba(145, 147, 166, 1);
+}
+.Item-group .text { 
+    padding: 8px 18px;
+    background: #F6F8FC;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--strong-blue);
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --inter: 'Inter', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --strong-blue: rgba(44, 46, 80, 1);
+    --green: rgba(0, 205, 107, 1);
+    --gray: #F3F4F8;
+    --white: #fff;
+    --black: #000000;
+}
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}

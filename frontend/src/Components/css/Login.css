@@ -1,0 +1,137 @@
+@import './variables.css';
+
+.container-login  {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;  
+  background: var(--white);
+}
+.group-btns__btn {
+  width: 200px;
+}
+.container__left {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 108px;
+  background: #F3F4F8;
+  justify-content: center;
+  align-items: center;
+}
+.container__left--ilustracion {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 75px);
+}
+.container__right {
+  width: 100%;
+  height: 100%;
+}
+.container__right--title {
+  margin-top: 120px;
+  text-align: center;
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.container__right--form {
+  margin: 70px auto 0;
+  width: 90%;
+  max-width: 469px;
+}
+.Input-group {
+  width: 100%;
+  height: auto;
+  margin-bottom: 33px;
+}
+.Input-group .label {
+  display: block;
+  font-family: var(--inter);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgba(117, 117, 117, 1);
+
+}
+.Input-group input[type="number"],
+.Input-group input[type="text"],
+.Input-group input[type="email"],
+.Input-group input[type="password"] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: #F6F8FC;
+  border-radius: 20px;
+  padding-left: 22px;
+  margin-top: 4px;
+  outline: none;
+  font-size: 1.4rem;
+  font-family: var(--inter);
+  font-weight: 400;
+  color: #979797;
+}
+.Input-group input[type="email"]::-webkit-input-placeholder,
+.Input-group input[type="password"]::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  font-family: var(--inter);
+  font-weight: 100;
+  color: #979797;
+}
+.group-btns {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.group-btns__btn {
+  align-self: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 350px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  background: #20CC81;
+  font-family: var(--poppins);
+  font-weight: 700;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.btn-left {
+  margin-right: 10px;
+}
+.register-title {
+  margin-top: 80px;
+}
+.register-form {
+  margin: 40px auto;
+}
+@media(min-width:815px) {
+  .container-login  {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .container__left { 
+    height: 100%;
+  }
+  .container__left--ilustracion { 
+    position: static;
+    width: 350px;
+    height: 350px;
+  }
+  .container__right--title { 
+    font-size: 4rem;
+  }
+  .register-title {
+    margin-top: 50px;
+  }
+  .group-btns { 
+    flex-direction: row;
+  }
+  .Input-group .label { 
+    font-size: 1.4rem;
+  }
+}
